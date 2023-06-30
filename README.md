@@ -21,7 +21,7 @@ $ composer require hughcube/laravel-aliyun-market -vvv
 ## Configuration
 
 ```shell
-$ php artisan vendor:publish --provider="HughCube\Laravel\CaptchaCode\ServiceProvider"
+$ php artisan vendor:publish --provider="HughCube\Laravel\AliYunMarket\ServiceProvider"
 ```
 
 ## Usage
