@@ -6,10 +6,9 @@
  * Time: 11:36 下午.
  */
 
-namespace HughCube\Laravel\Package\Tests;
+namespace HughCube\Laravel\AliYunMarket\Tests;
 
-use HughCube\Laravel\Package\Package;
-use HughCube\Laravel\Package\ServiceProvider as PackageServiceProvider;
+use HughCube\Laravel\AliYunMarket\AliYunMarket;
 use Illuminate\Config\Repository;
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
@@ -17,7 +16,7 @@ use Orchestra\Testbench\TestCase as OrchestraTestCase;
 class TestCase extends OrchestraTestCase
 {
     /**
-     * @param  Application  $app
+     * @param Application $app
      *
      * @return array
      */
@@ -29,7 +28,7 @@ class TestCase extends OrchestraTestCase
     }
 
     /**
-     * @param  Application  $app
+     * @param Application $app
      */
     protected function getEnvironmentSetUp($app)
     {
@@ -38,13 +37,13 @@ class TestCase extends OrchestraTestCase
         /** @var Repository $appConfig */
         $appConfig = $app['config'];
         $appConfig->set(
-            Package::getFacadeAccessor(),
-            (require dirname(__DIR__).'/config/config.php')
+            AliYunMarket::getFacadeAccessor(),
+            (require dirname(__DIR__) . '/config/config.php')
         );
     }
 
     /**
-     * @param  Application  $app
+     * @param Application $app
      */
     protected function setupCache(Application $app)
     {

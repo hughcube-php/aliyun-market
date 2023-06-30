@@ -6,13 +6,13 @@
  * Time: 10:32 下午.
  */
 
-namespace HughCube\Laravel\Package;
+namespace HughCube\Laravel\AliYunMarket;
 
 class ServiceProvider extends \HughCube\Laravel\ServiceSupport\ServiceProvider
 {
     protected function getPackageFacadeAccessor(): string
     {
-        return Package::getFacadeAccessor();
+        return AliYunMarket::getFacadeAccessor();
     }
 
     /**

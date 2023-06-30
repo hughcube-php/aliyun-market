@@ -1,5 +1,5 @@
 {
-    "name": "hughcube/laravel-package",
+    "name": "hughcube/aliyun-market",
     "description": "",
     "license": "MIT",
     "authors": [
@@ -10,6 +10,7 @@
     ],
     "require": {
         "php": ">=7.0",
+        "hughcube/guzzle-http": "*",
         "hughcube/laravel-service-support": "*"
     },
     "require-dev": {
@@ -21,23 +22,23 @@
     },
     "autoload": {
         "psr-4": {
-            "HughCube\\Laravel\\Package\\": "src"
+            "HughCube\\Laravel\\AliYunMarket\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "HughCube\\Laravel\\Package\\Tests\\": "tests"
+            "HughCube\\Laravel\\AliYunMarket\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "HughCube\\Laravel\\Package\\ServiceProvider"
+                "HughCube\\Laravel\\AliYunMarket\\ServiceProvider"
             ]
         }
     },
     "scripts": {
-        "test": "phpunit --verbose --coverage-clover=coverage.clover",
+        "test": "phpunit",
         "phpstan": "phpstan analyse -vvv",
         "check-style": "phpcs -p --standard=PSR2 src/ -v",
         "fix-style": "phpcbf -p --standard=PSR2 src/ -v"

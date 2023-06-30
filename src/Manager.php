@@ -6,7 +6,7 @@
  * Time: 4:19 下午.
  */
 
-namespace HughCube\Laravel\Package;
+namespace HughCube\Laravel\AliYunMarket;
 
 use HughCube\Laravel\ServiceSupport\Manager as ServiceSupportManager;
 use Illuminate\Contracts\Config\Repository;
@@ -25,7 +25,7 @@ class Manager extends ServiceSupportManager
 
     protected function getPackageFacadeAccessor(): string
     {
-        return Package::getFacadeAccessor();
+        return AliYunMarket::getFacadeAccessor();
     }
 
     public function getDriversConfigKey(): string

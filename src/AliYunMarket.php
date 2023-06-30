@@ -6,7 +6,7 @@
  * Time: 10:31 下午.
  */
 
-namespace HughCube\Laravel\Package;
+namespace HughCube\Laravel\AliYunMarket;
 
 use HughCube\Laravel\ServiceSupport\LazyFacade;
 use Illuminate\Support\Str;
@@ -14,12 +14,12 @@ use Illuminate\Support\Str;
 /**
  * Class Package.
  *
- * @method static Client driver(string $name = null)
+ * @method static Client client(string $name = null)
  *
- * @see \HughCube\Laravel\Package\Manager
- * @see \HughCube\Laravel\Package\ServiceProvider
+ * @see Manager
+ * @see ServiceProvider
  */
-class Package extends LazyFacade
+class AliYunMarket extends LazyFacade
 {
     /**
      * Get the registered name of the component.

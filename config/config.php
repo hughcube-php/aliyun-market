@@ -9,6 +9,8 @@ return [
     'defaults' => [],
 
     'clients' => [
-        'default' => [],
+        'default' => [
+            'AppCode' => 'AppCode',
+        ],
     ],
 ];

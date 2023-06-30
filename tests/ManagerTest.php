@@ -6,7 +6,7 @@
  * Time: 11:45 下午.
  */
 
-namespace HughCube\Laravel\Package\Tests;
+namespace HughCube\Laravel\AliYunMarket\Tests;
 
 class ManagerTest extends TestCase
 {

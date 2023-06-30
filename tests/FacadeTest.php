@@ -6,21 +6,21 @@
  * Time: 11:45 下午.
  */
 
-namespace HughCube\Laravel\Package\Tests;
+namespace HughCube\Laravel\AliYunMarket\Tests;
 
-use HughCube\Laravel\Package\Client;
-use HughCube\Laravel\Package\Manager;
-use HughCube\Laravel\Package\Package;
+use HughCube\Laravel\AliYunMarket\Client;
+use HughCube\Laravel\AliYunMarket\Manager;
+use HughCube\Laravel\AliYunMarket\AliYunMarket;
 
 class FacadeTest extends TestCase
 {
     public function testIsFacade()
     {
-        $this->assertInstanceOf(Manager::class, Package::getFacadeRoot());
+        $this->assertInstanceOf(Manager::class, AliYunMarket::getFacadeRoot());
     }
 
     public function testDriver()
     {
-        $this->assertInstanceOf(Client::class, Package::driver());
+        $this->assertInstanceOf(Client::class, AliYunMarket::client());
     }
 }
